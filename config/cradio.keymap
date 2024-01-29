@@ -79,6 +79,12 @@
             key-positions = <30 32>;
             layers = <0 1 2 3>;
         };
+
+        combo_screenshot {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <0 1 9>;
+            layers = <1 0 2 3>;
+        };
     };
 
     keymap {
