@@ -101,10 +101,10 @@
 
         vim_and_nav {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5            &kp NUMBER_6           &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9      &kp NUMBER_0
-&kp LEFT      &kp DOWN      &kp UP_ARROW  &kp RIGHT       &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp H            &kp J         &kp K             &kp L
-&kp K_MUTE    &kp C_VOL_DN  &kp C_VOL_UP  &kp LEFT_BRACE  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT
-                                          &to 0           &kp ESC                 &kp RIGHT_GUI          &to 2
+&kp NUMBER_1              &kp NUMBER_2        &kp NUMBER_3         &kp NUMBER_4           &kp NUMBER_5            &kp NUMBER_6           &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9      &kp NUMBER_0
+&hml LEFT_GUI LEFT_ARROW  &hml LEFT_ALT DOWN  &hml LCTRL UP_ARROW  &hml LEFT_SHIFT RIGHT  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &hmr LEFT_SHIFT H  &hmr RCTRL J  &hmr RIGHT_ALT K  &hmr RIGHT_GUI L
+&kp K_MUTE                &kp C_VOL_DN        &kp C_VOL_UP         &kp LEFT_BRACE         &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp RIGHT_BRACE    &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT
+                                                                   &to 0                  &kp ESC                 &kp DELETE             &to 2
             >;
         };
 
