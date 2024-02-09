@@ -119,10 +119,10 @@
 
         special {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_CLR    &out OUT_TOG  &none            &none  &none  &none
-&kp LC(Z)     &kp LC(X)     &kp LC(C)      &kp LC(V)      &none         &none         &kp PRINTSCREEN  &none  &none  &none
-&none         &none         &kp LS(LC(C))  &kp LS(LC(V))  &none         &none         &none            &none  &none  &none
-                                           &to 0          &none         &none         &none
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &out OUT_TOG  &none            &none  &none  &bootloader
+&none         &none         &none         &none         &none         &none         &kp PRINTSCREEN  &none  &none  &none
+&none         &none         &none         &none         &none         &none         &none            &none  &none  &sys_reset
+                                          &to 0         &none         &none         &none
             >;
         };
     };
