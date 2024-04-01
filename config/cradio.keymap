@@ -120,37 +120,37 @@
 
         default_layer {
             bindings = <
-&kp W            &kp L            &hml LCTRL Y         &hml LGUI P             &kp B        &kp SQT               &hmr RGUI F     &hmr RCTRL O    &kp U             &kp Q
-&kp D            &hml_layer 3 R   &hml_layer 2 S       &hml_layer 1 T          &kp G        &kp M                 &hmr_layer 1 N  &hmr_layer 2 E  &hmr_layer 3 I    &kp A
-&kp Z            &kp X            &kp C                &kp V                   &kp K        &kp SLASH             &kp H           &kp COMMA       &kp DOT           &kp J
-                                                       &kp SPACE               &kp LSHFT    &kp RETURN         &kp BACKSPACE
+&kp W  &hml LALT L     &hml LCTRL Y    &hml LGUI P     &kp B        &kp SQT     &hmr RGUI F     &hmr RCTRL O    &hmr RALT U     &kp Q
+&kp D  &hml_layer 3 R  &hml_layer 2 S  &hml_layer 1 T  &kp G        &kp M       &hmr_layer 1 N  &hmr_layer 2 E  &hmr_layer 3 I  &kp A
+&kp Z  &kp X           &kp C           &kp V           &kp K        &kp SLASH   &kp H           &kp COMMA       &kp DOT         &kp J
+                                       &kp SPACE       &kp LSHFT    &kp RETURN  &kp BACKSPACE
             >;
         };
 
         vim_and_nav {
             bindings = <
-&ht RG(N1) N1  &ht RG(N2) N2       &ht RG(N3) N3  &ht RG(N4) N4  &ht RG(N5) N5  &ht RG(N6) N6  &ht RG(N7) N7  &ht RG(N8) N8         &ht RG(N9) N9         &ht RG(N0) N0
-&kp K_MUTE     &kp C_VOL_DN        &kp C_VOL_UP   &trans         &kp ESCAPE     &kp ESCAPE     &kp LEFT       &kp DOWN              &kp UP                &kp RIGHT
-&kp K_PREV     &kp K_PLAY_PAUSE    &kp K_NEXT     &trans         &kp TAB        &kp TAB        &trans         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
-                                                  &trans         &trans         &trans         &kp DEL
+&ht RG(N1) N1  &ht RG(N2) N2     &ht RG(N3) N3  &ht RG(N4) N4  &ht RG(N5) N5    &ht RG(N6) N6  &ht RG(N7) N7  &ht RG(N8) N8         &ht RG(N9) N9         &ht RG(N0) N0
+&kp K_MUTE     &kp C_VOL_DN      &kp C_VOL_UP   &trans         &kp ESCAPE       &kp ESCAPE     &kp LEFT       &kp DOWN              &kp UP                &kp RIGHT
+&kp K_PREV     &kp K_PLAY_PAUSE  &kp K_NEXT     &trans         &kp TAB          &kp TAB        &trans         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
+                                                &trans         &kp LEFT_WIN     &trans         &kp DEL
             >;
         };
 
         sym {
             bindings = <
-&trans     &trans         &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans           &trans
-&kp COLON  &kp AT         &kp TILDE       &kp BACKSLASH     &kp PLUS              &kp EQUAL              &kp PIPE           &kp GRAVE        &kp EXCLAMATION  &kp SEMICOLON
-&trans     &kp AMPERSAND  &kp PERCENT     &kp HASH          &kp UNDERSCORE        &kp MINUS              &kp DOLLAR         &kp CARET        &kp ASTERISK     &trans
-                                          &trans            &trans                &trans                 &trans
+&trans     &trans         &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans           &trans
+&kp COLON  &kp AT         &kp TILDE       &kp BACKSLASH     &kp PLUS                &kp EQUAL              &kp PIPE           &kp GRAVE        &kp EXCLAMATION  &kp SEMICOLON
+&trans     &kp AMPERSAND  &kp PERCENT     &kp HASH          &kp UNDERSCORE          &kp MINUS              &kp DOLLAR         &kp CARET        &kp ASTERISK     &trans
+                                          &trans            &trans                  &trans                 &trans
             >;
         };
 
         special {
             bindings = <
-&kp F1        &kp F2        &kp F3         &kp F4        &kp F5        &kp F6        &kp F7   &kp F8   &kp F9   &kp F10
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_CLR    &out OUT_TOG  &trans   &trans   &kp F11  &kp F12
-&bootloader   &trans        &trans        &trans         &trans        &trans        &trans   &trans   &trans   &sys_reset
-                                          &trans         &trans        &trans         &trans
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7  &kp F8  &kp F9   &kp F10
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &out OUT_TOG  &trans  &trans  &kp F11  &kp F12
+&bootloader   &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans   &sys_reset
+                                          &trans        &trans        &trans        &trans
             >;
         };
     };
