@@ -84,34 +84,9 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_sys_reset {
-            bindings = <&sys_reset>;
-            key-positions = <26 29 20 23>;
-            layers = <3>;
-        };
-
-        combo_boot_reset {
-            bindings = <&bootloader>;
-            key-positions = <20 23 26 29 27 22>;
-            layers = <3>;
-        };
-
-        combo_tab {
-            bindings = <&kp TAB>;
-            key-positions = <31 32>;
-            layers = <0 1 2 3>;
-        };
-
-        combo_esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <30 32>;
-            layers = <0 1 2 3>;
-        };
-
-        combo_screenshot {
-            bindings = <&kp PRINTSCREEN>;
-            key-positions = <0 1 9>;
-            layers = <1 0 2 3>;
+        combo_gametime {
+            bindings = <&to 4>;
+            key-positions = <30 33 14>;
         };
     };
 
@@ -127,7 +102,7 @@
             >;
         };
 
-        vim_and_nav {
+        num_and_nav {
             bindings = <
 &ht RG(N1) N1  &ht RG(N2) N2     &ht RG(N3) N3  &ht RG(N4) N4  &ht RG(N5) N5    &ht RG(N6) N6  &ht RG(N7) N7  &ht RG(N8) N8         &ht RG(N9) N9         &ht RG(N0) N0
 &kp K_MUTE     &kp C_VOL_DN      &kp C_VOL_UP   &trans         &kp ESCAPE       &kp ESCAPE     &kp LEFT       &kp DOWN              &kp UP                &kp RIGHT
@@ -151,6 +126,15 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &out OUT_TOG  &trans  &trans  &kp F11  &kp F12
 &bootloader   &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans   &sys_reset
                                           &trans        &trans        &trans        &trans
+            >;
+        };
+
+        game {
+            bindings = <
+&kp TAB       &kp Q  &kp W  &kp E      &kp R             &trans  &trans  &trans  &trans  &trans
+&kp LCTRL     &kp A  &kp S  &kp D      &kp F             &trans  &trans  &trans  &trans  &to 0
+&lt 1 ESCAPE  &kp Z  &kp X  &kp C      &kp V             &trans  &trans  &trans  &trans  &trans
+                            &kp SPACE  &kp LEFT_SHIFT    &trans  &trans
             >;
         };
     };
