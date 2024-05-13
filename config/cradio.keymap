@@ -133,7 +133,7 @@
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E      &kp R             &kp T   &kp Y  &kp U  &kp I  &kp O
 &kp LCTRL  &kp A  &kp S  &kp D      &kp F             &kp G   &kp H  &kp J  &kp K  &kp L
-&mo 5      &kp Z  &kp X  &kp C      &kp V             &kp B   &kp N  &kp M  &kp P  &none
+&mo 5      &kp Z  &kp X  &kp C      &kp V             &kp B   &kp N  &kp M  &kp P  &mo 6
                          &kp SPACE  &kp LEFT_SHIFT    &trans  &to 0
             >;
         };
@@ -144,6 +144,15 @@
 &kp K_MUTE    &kp C_VOL_DN      &kp C_VOL_UP  &trans        &kp ESCAPE      &kp ESCAPE    &kp LEFT      &kp DOWN              &kp UP                &kp RIGHT
 &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &trans        &kp TAB         &kp TAB       &trans        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PRINTSCREEN
                                               &trans        &kp LEFT_WIN    &trans        &kp DEL
+            >;
+        };
+
+        game_func {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
             >;
         };
     };
